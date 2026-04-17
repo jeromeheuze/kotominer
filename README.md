@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="KotoMiner" width="120" />
+</p>
+
 # KotoMiner
 
 **KotoMiner** is a desktop CPU miner for [KOTO](https://ko-to.org) on Windows. It wraps the official [KotoDevelopers/cpuminer-yescrypt](https://github.com/KotoDevelopers/cpuminer-yescrypt) binaries, auto-selects the fastest CPU variant for your machine, and provides a clean Mine / Benchmark / Settings workflow.
