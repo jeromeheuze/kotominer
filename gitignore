@@ -1,0 +1,19 @@
+node_modules/
+dist/
+out/
+.env
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Electron builder cache
+.electron-builder-cache/
+
+# Bundled miner binaries (distributed via releases, not committed to repo)
+src/miners/*.exe
+src/miners/*.bin
