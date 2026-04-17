@@ -1,0 +1,1 @@
+minerd-avx2.exe -o stratum+tcp://koto.isekai-pool.com:3302 -u k1Ev447YkYF3BCKf8ryph7afYZGhRtBASDW.alienware -p x -t 16

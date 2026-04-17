@@ -1,0 +1,39 @@
+# Kotominer — electron-builder (see _docs/kotominer-electron-spec.md)
+appId: com.isekai-pool.kotominer
+productName: Kotominer
+copyright: Copyright © isekai-pool.com
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - package.json
+  - dist/**/*
+  - src/main/**/*
+  - src/preload/**/*
+
+extraResources:
+  - from: resources
+    to: resources
+    filter:
+      - "**/*"
+
+win:
+  # Skip rcedit on the unpacked exe (avoids "Unable to commit changes" from AV/locks/UTF-8 in version strings).
+  # App/window icon still comes from BrowserWindow + NSIS installer branding from build/icon.ico.
+  signAndEditExecutable: false
+  target:
+    - nsis
+  artifactName: ${productName}-Setup-${version}.${ext}
+
+linux:
+  target:
+    - AppImage
+    - deb
+  artifactName: ${productName}-${version}.${ext}
+  category: Utility
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

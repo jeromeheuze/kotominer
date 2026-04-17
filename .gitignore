@@ -1,0 +1,15 @@
+node_modules/
+dist/
+release/
+*.log
+.DS_Store
+Thumbs.db
+
+# Miner binaries — download from GitHub releases; never commit (see resources/README.md)
+resources/**/cpuminer-koto
+resources/**/cpuminer-koto.exe
+resources/**/minerd
+resources/**/minerd.exe
+resources/**/minerd-*.exe
+resources/**/*.dll
+resources/**/*.zip
